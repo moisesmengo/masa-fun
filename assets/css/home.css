@@ -94,10 +94,32 @@
 .casting {
   margin-top: 108px;
 }
+.header_casting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contador_paginas {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.contador_paginas span {
+  font-size: 18px;
+  font-weight: bold;
+}
+#atual_slide {
+  opacity: 0.5;
+}
+.linha {
+  height: 3px;
+  width: 200px;
+  background: #ffff;
+}
 .castig_slide {
   margin-top: 80px;
-  height: 560px;
-  margin-bottom: 160px;
+  height: 640px;
+  padding-bottom: 80px !important;
 }
 .castig_slide .swiper-slide {
   overflow: hidden;
@@ -168,7 +190,9 @@
 }
 
 /* servicos */
-
+.servicos {
+  margin-top: 65px !important;
+}
 .servicos_itens {
   margin-top: 64px;
   display: grid;
@@ -469,4 +493,133 @@
   align-items: center;
   gap: 38px;
   padding-bottom: 80px;
+}
+
+/* responsivo */
+@media (max-width: 1500px) {
+  .circulo {
+    width: 459px;
+    height: 459px;
+    top: -300px;
+    left: -100px;
+  }
+  .pontos {
+    width: 256px;
+    height: 70px;
+  }
+  .circulo_pontos {
+    width: 200px;
+    height: 200px;
+    top: 50%;
+  }
+}
+@media (max-width: 1000px) {
+  .servico_item h3 {
+    margin-bottom: 20px !important;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .servico_item {
+    height: 300px;
+    padding: 20px;
+  }
+  .eventos,
+  .eventos_realizados_itens {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .header_eventos_healizados .text {
+    flex: 1;
+    margin-left: 20px;
+  }
+  .evento_realizado {
+    height: 300px !important;
+  }
+  .evento_realizado p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .content_footer,
+  .content_footer form {
+    grid-template-columns: 1fr 1fr !important;
+  }
+  .form_item {
+    grid-column: -1/1;
+  }
+}
+@media (max-width: 780px) {
+  .servicos_itens {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .servico_item {
+    flex: 1 1 300px;
+    padding: 40px;
+  }
+  .video {
+    height: 300px;
+  }
+  .eventos,
+  .eventos_realizados_itens {
+    grid-template-columns: 1fr;
+  }
+  .header_eventos_healizados {
+    flex-direction: column;
+  }
+  .header_eventos_healizados .text {
+    margin-left: 0;
+    margin-top: 22px;
+  }
+  .apoios {
+    gap: 14px;
+  }
+  .apoios img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+  }
+}
+@media (max-width: 550px) {
+  .circulo,
+  .pontos {
+    display: none;
+  }
+
+  .contador_paginas {
+    display: none;
+  }
+  .header_casting {
+    justify-content: center;
+  }
+  .bg_main_content {
+    height: 36%;
+  }
+  .casting {
+    margin-top: 70px;
+  }
+  .servicos {
+    margin-top: 160px !important;
+  }
+  .circulo_linhas {
+    bottom: 80px !important;
+    right: -200px !important;
+    left: initial !important;
+  }
+  .eventos_adereco {
+    display: none;
+  }
+  .apoios img {
+    width: 40px;
+    height: 40px;
+  }
+  .content_footer {
+    gap: 60px !important;
+  }
+  .copy {
+    text-align: center;
+  }
+  .comentarios .titulo,
+  .comentarios .subtitulo {
+    text-align: center;
+  }
 }
