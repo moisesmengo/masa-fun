@@ -324,6 +324,14 @@ footer .social_menu {
   display: none;
 }
 
+.whats_fixo {
+  position: fixed;
+  right: 85px;
+  bottom: 85px;
+  z-index: 100;
+  transition: 0.7s all;
+}
+
 /* responsivo */
 @media (max-width: 1260px) {
   .container {
@@ -486,6 +494,14 @@ footer .social_menu {
   .content_footer {
     grid-template-columns: 1fr !important;
     gap: 30px;
+  }
+  .whats_fixo {
+    right: 40px;
+    bottom: 40px;
+  }
+  .whats_fixo svg {
+    width: 60px;
+    height: 60px;
   }
 }
 
