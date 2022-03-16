@@ -1,0 +1,46 @@
+.main_content_casting {
+  position: relative;
+  background: var(--secundary) !important;
+  padding: 73px 0 44px 0;
+  overflow: hidden;
+}
+.main_content_casting svg {
+  position: absolute;
+  z-index: 0;
+}
+.pontos {
+  left: -80px;
+  top: -120px;
+}
+.circulo_azul {
+  right: -120px;
+  top: -120px;
+}
+.casting_content .title_large {
+  margin-bottom: 90px;
+}
+.main_content_casting .castig_slide .swiper-slide::after {
+  background: linear-gradient(
+    180deg,
+    rgba(196, 196, 196, 0) 0%,
+    rgba(65, 65, 156, 0.65) 58.46%,
+    #17246e 100%
+  );
+}
+.main_content_casting .castig_slide .swiper-slide .nome_artista {
+  bottom: 105px;
+}
+.empresas_casting img {
+  margin: 52px auto;
+  display: block;
+}
+
+.footer_casting {
+  background: linear-gradient(to bottom, #f60393 30%, #fff 30%);
+}
+
+@media (max-width: 550px) {
+  .header_casting {
+    justify-content: flex-start !important;
+  }
+}

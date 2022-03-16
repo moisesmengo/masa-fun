@@ -1,5 +1,5 @@
 @import url(home.css);
-
+@import url(casting.css);
 /* estilos gerais */
 
 :root {
@@ -29,6 +29,9 @@
   font-size: 16px;
   color: #fff;
   font-family: "Montserrat", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
 }
 p {
   font-family: "Merriweather Sans", sans-serif;
@@ -72,6 +75,12 @@ a {
   font-weight: bold;
   line-height: 44px;
   letter-spacing: 0.3px;
+}
+.title_large {
+  color: var(--success);
+  font-weight: 900;
+  font-size: 117px;
+  text-transform: uppercase;
 }
 
 .btn {
@@ -138,6 +147,7 @@ a {
 .main_header {
   display: grid;
   grid-template-rows: 50px 110px;
+  box-shadow: 0px 10px 30px #00000029;
 }
 .top_nav {
   background: var(--primary);
@@ -162,7 +172,7 @@ a {
 }
 .top_nav ul a:hover,
 .menu a:not(.btn):hover {
-  filter: brightness(80%);
+  color: var(--secundary);
 }
 .top_nav ul li a::after {
   content: "|";
@@ -188,6 +198,111 @@ a.ultimo::after {
   color: var(--primary);
   padding: 3px 22px;
   transition: 0.7s all;
+}
+
+/* slide principal */
+.header_casting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_casting .titulo {
+  text-transform: uppercase;
+}
+.contador_paginas {
+  display: flex;
+  gap: 9px;
+  align-items: center;
+}
+.contador_paginas span {
+  font-size: 18px;
+  font-weight: bold;
+}
+#atual_slide {
+  opacity: 0.5;
+}
+.linha {
+  height: 3px;
+  width: 200px;
+  background: #ffff;
+}
+.castig_slide {
+  margin-top: 80px;
+  height: 640px;
+  padding-bottom: 80px !important;
+}
+.castig_slide .swiper-slide {
+  overflow: hidden;
+  height: 100%;
+  transition: 0.6s;
+  position: relative;
+}
+.castig_slide .swiper-slide::after {
+  content: "";
+  background: linear-gradient(
+    180deg,
+    rgba(145, 91, 212, 0) 0%,
+    rgba(198, 47, 180, 0.3) 46.55%,
+    #fa0495 100%
+  );
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  transition: 1.2s;
+}
+
+.castig_slide .swiper-slide:hover::after {
+  bottom: 0;
+}
+
+.castig_slide .swiper-slide img {
+  object-fit: cover;
+  width: 100%;
+  display: block;
+  height: 100% !important;
+  transition: 1.2s;
+}
+.nome_artista,
+.data_evento {
+  position: absolute;
+  z-index: 100;
+  bottom: 52px;
+  text-transform: uppercase;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 25px;
+  line-height: 36px;
+  letter-spacing: 2.78px;
+  font-weight: 300;
+  text-align: center;
+  opacity: 0;
+  transition: 0.7s 0.2s;
+}
+.castig_slide .swiper-slide:hover {
+  border-radius: 18px;
+}
+.castig_slide .swiper-slide:hover img {
+  transform: scale(1.06);
+}
+.castig_slide .swiper-slide:hover .nome_artista,
+.castig_slide .swiper-slide:hover .data_evento {
+  opacity: 1;
+}
+.data_evento {
+  font-size: 43px;
+  font-weight: bold;
+}
+
+.castig_slide .swiper-pagination {
+  z-index: 100;
+}
+.castig_slide .swiper-pagination-bullet {
+  background: #fff;
+  height: 22px;
+  width: 22px;
 }
 
 /* footer */
@@ -331,7 +446,9 @@ footer .social_menu {
   z-index: 100;
   transition: 0.7s all;
 }
-
+.whats_fixo:hover {
+  filter: brightness(80%);
+}
 /* responsivo */
 @media (max-width: 1260px) {
   .container {
@@ -520,9 +637,26 @@ footer .social_menu {
     width: 13px;
     height: 13px;
   }
+  .contador_paginas {
+    display: none;
+  }
+  .header_casting {
+    justify-content: center;
+  }
+  .title_large {
+    font-size: 72px;
+    text-align: center;
+    margin-bottom: 72px !important;
+  }
+  .castig_slide {
+    margin-top: 40px;
+  }
 }
 @media (max-width: 426px) {
   .top_nav .container {
     flex-direction: column;
+  }
+  .title_large {
+    font-size: 48px;
   }
 }

@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Massa Fun</title>
+    <title>Massa Fun - Casting</title>
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -23,15 +23,15 @@
       <nav class="top_nav">
         <div class="container">
           <ul>
-            <li><a href="">Rádio </a></li>
-            <li><a href="">Televisão </a></li>
-            <li><a href="">Portal </a></li>
-            <li><a href="">Eventos </a></li>
-            <li><a href="" class="ultimo">E-commerce</a></li>
+            <li><a href="#">Rádio </a></li>
+            <li><a href="#">Televisão </a></li>
+            <li><a href="#">Portal </a></li>
+            <li><a href="#">Eventos </a></li>
+            <li><a href="#" class="ultimo">E-commerce</a></li>
           </ul>
 
           <div class="social_menu">
-            <a href=""
+            <a href="#"
               ><svg
                 id="instagram"
                 xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@
                 />
               </svg>
             </a>
-            <a href=""
+            <a href="#"
               ><svg
                 id="facebook"
                 xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +62,7 @@
                 />
               </svg>
             </a>
-            <a href=""
+            <a href="#"
               ><svg
                 id="Twitter"
                 xmlns="http://www.w3.org/2000/svg"
@@ -77,7 +77,7 @@
                 />
               </svg>
             </a>
-            <a href=""
+            <a href="#"
               ><svg
                 id="Linkedin"
                 xmlns="http://www.w3.org/2000/svg"
@@ -107,12 +107,14 @@
               <span class="hamburgger"></span>
             </button>
             <ul class="menu">
-              <li><a href="">Quem somos</a></li>
-              <li><a href="">Casting</a></li>
-              <li><a href="">Eventos realizados</a></li>
-              <li><a href="">Comprar ingressos</a></li>
-              <li><a href="">Contato</a></li>
-              <li><a href="" class="btn">CONTRATAR AGORA</a></li>
+              <li><a href="#quem-somos">Quem somos</a></li>
+              <li><a href="/casting.html">Casting</a></li>
+              <li><a href="#eventos-realizados">Eventos realizados</a></li>
+              <li><a href="#proximos-eventos">Comprar ingressos</a></li>
+              <li><a href="#contato">Contato</a></li>
+              <li>
+                <a href="#contratar-agora" class="btn">CONTRATAR AGORA</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -123,11 +125,11 @@
           <img src="assets/img/logo_menu_mobile.svg" alt="Massa Fun" />
 
           <ul>
-            <li><a href="#">Quem somos</a></li>
-            <li><a href="#">Casting</a></li>
-            <li><a href="#">Eventos realizados</a></li>
-            <li><a href="#">Comprar ingressos</a></li>
-            <li><a href="#">Contato</a></li>
+            <li><a href="#quem-somos">Quem somos</a></li>
+            <li><a href="/casting.html">Casting</a></li>
+            <li><a href="#eventos-realizados">Eventos realizados</a></li>
+            <li><a href="#proximos-eventos">Comprar ingressos</a></li>
+            <li><a href="#contato">Contato</a></li>
             <li><a href="" class="btn">CONTRATAR AGORA</a></li>
           </ul>
 
@@ -873,7 +875,7 @@
             <span id="qtd_slide">8</span>
           </div>
         </div>
-        <div class="swiper castig_slide">
+        <div class="swiper castig_slide home_slide">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <img src="assets/img/casting-slide/1.png" alt="artista" />
@@ -1022,7 +1024,7 @@
         ></iframe>
       </div>
 
-      <section class="proximos_eventos container index_">
+      <section class="proximos_eventos container index_" id="proximos-eventos">
         <h1 class="titulo">PRÓXIMOS EVENTOS</h1>
         <div class="eventos">
           <div class="evento">
@@ -1176,7 +1178,7 @@
     </main>
 
     <div class="content_secundary">
-      <section class="eventos_realizados">
+      <section class="eventos_realizados" id="eventos-realizados">
         <div class="container">
           <svg
             width="712"
@@ -1597,7 +1599,7 @@
           </defs>
         </svg>
       </div>
-      <div class="container index_">
+      <div class="container index_" id="contratar-agora">
         <h1 class="titulo">Interesse em nos contratar?</h1>
         <p>
           Challenge us. We want to work with you to create the really cool
@@ -1825,39 +1827,8 @@
           prevEl: ".swiper-button-prev",
         },
         autoplay: {
-          delay: 3000,
+          delay: 6000,
           disableOnInteraction: false,
-        },
-      });
-
-      var swiper = new Swiper(".castig_slide", {
-        slidesPerView: 6,
-        spaceBetween: 22,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: false,
-        },
-        breakpoints: {
-          1500: {
-            slidesPerView: 6,
-          },
-          900: {
-            slidesPerView: 4,
-          },
-          700: {
-            slidesPerView: 3,
-          },
-          400: {
-            slidesPerView: 2,
-          },
-          200: {
-            slidesPerView: 1,
-          },
         },
       });
 
