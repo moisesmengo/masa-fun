@@ -1,5 +1,6 @@
 @import url(home.css);
 @import url(casting.css);
+@import url(artista.css);
 /* estilos gerais */
 
 :root {
@@ -19,6 +20,9 @@
 }
 .text {
   color: var(--text);
+}
+.primary {
+  color: var(--primary);
 }
 * {
   margin: 0;
@@ -83,6 +87,15 @@ a {
   text-transform: uppercase;
 }
 
+.area_title {
+  background: var(--secundary);
+  padding: 160px 15px;
+  text-align: center;
+}
+.area_title h2 {
+  font-size: 75px;
+  line-height: 92px;
+}
 .btn {
   display: flex;
   justify-content: center;
@@ -142,6 +155,21 @@ a {
   cursor: pointer;
   background: var(--secundary-alternative);
   transition: 0.7s;
+}
+
+.btn_artista {
+  background: var(--primary);
+  gap: 5px;
+  display: flex;
+  justify-content: center;
+  padding: 19px 23px;
+  position: relative;
+  max-width: 350px;
+  border-radius: 30px;
+}
+.btn_artista svg {
+  margin: 0 !important;
+  right: 23px;
 }
 /* header */
 .main_header {
@@ -449,7 +477,32 @@ footer .social_menu {
 .whats_fixo:hover {
   filter: brightness(80%);
 }
+
 /* responsivo */
+@media (max-width: 1500px) {
+  .whats_fixo svg {
+    width: 80px;
+    height: 80px;
+    right: 80px;
+    bottom: 80px;
+  }
+  .whats_fixo {
+    right: 80px;
+    bottom: 40px;
+  }
+  .area_title {
+    padding: 80px 0;
+  }
+  .title_large {
+    font-size: 80px !important;
+    line-height: 80px;
+  }
+  .area_title h2 {
+    font-size: 45px;
+    line-height: 50px;
+  }
+}
+
 @media (max-width: 1260px) {
   .container {
     width: 90%;
@@ -644,12 +697,34 @@ footer .social_menu {
     justify-content: center;
   }
   .title_large {
-    font-size: 72px;
+    font-size: 72px !important;
     text-align: center;
     margin-bottom: 72px !important;
   }
   .castig_slide {
     margin-top: 40px;
+  }
+
+  footer .titulo {
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 21px;
+  }
+  .castig_slide {
+    height: 550px !important;
+  }
+  .area_title .title_large {
+    margin-bottom: 0 !important;
+    font-size: 48px !important;
+    line-height: 48px;
+  }
+  .area_title h2 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .titulo {
+    font-size: 30px;
+    line-height: 36px;
   }
 }
 @media (max-width: 426px) {
