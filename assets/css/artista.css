@@ -1,6 +1,6 @@
 .main_content_artista {
   background: linear-gradient(180deg, #fcfcff 0%, #f7f5ff 100%) !important;
-  padding: 0;
+  padding: 0 !important;
 }
 .sobre_o_artista {
   padding: 8.375rem 0 5.625rem 0;
@@ -105,6 +105,13 @@
 
 /* responsivo */
 @media (max-width: 93.75rem) {
+  .item_numeros h2,
+  .item_numeros h2 * {
+    font-size: 2.6rem;
+  }
+  .item_numeros {
+    padding: 1rem;
+  }
   .sobre_o_artista {
     padding: 4rem 0 3.125rem 0;
   }
@@ -116,6 +123,9 @@
   }
   .artista_img img {
     box-shadow: var(--success) 0 0 0 1.125rem;
+  }
+  .outros_artistas {
+    margin-top: 5rem;
   }
 }
 

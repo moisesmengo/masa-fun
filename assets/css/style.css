@@ -480,6 +480,59 @@ footer .social_menu {
 
 /* responsivo */
 @media (max-width: 93.75rem) {
+  .container {
+    width: 90%;
+  }
+  .hero {
+    background: #000;
+    height: calc(100vh - 7.325rem);
+  }
+  .main_header {
+    grid-template-rows: 2.325rem 5rem;
+  }
+  .main_content_casting {
+    position: relative;
+    background: var(--secundary);
+    padding: 2.562rem 0 2.75rem 0;
+    overflow: hidden;
+  }
+  .titulo {
+    font-size: 2rem;
+  }
+  .logo img {
+    height: 3rem !important;
+    margin-top: 0.5rem;
+  }
+  .castig_slide {
+    margin-top: 3rem;
+    height: 28rem;
+    padding-bottom: 5rem !important;
+  }
+
+  .servico_item h3 {
+    margin: 1.375rem 0 1.3rem 0;
+  }
+
+  .empresas_casting img {
+    margin: 1.25rem auto;
+    max-width: 25rem;
+  }
+  .bg_footer {
+    width: calc(100% - 3.438rem);
+  }
+  .linha {
+    width: 9.5rem;
+  }
+  .content_footer form label,
+  .cards_footer .card span {
+    font-size: 1rem;
+  }
+  .content_footer {
+    display: grid;
+    column-gap: 3.4380000000000024rem;
+    margin-top: 2.5rem;
+    padding-bottom: 3.562999999999999rem;
+  }
   .whats_fixo svg {
     width: 5rem;
     height: 5rem;
@@ -491,7 +544,7 @@ footer .social_menu {
     bottom: 2.5rem;
   }
   .area_title {
-    padding: 5rem 0;
+    padding: 3rem 0;
   }
   .title_large {
     font-size: 5rem !important;
@@ -504,10 +557,6 @@ footer .social_menu {
 }
 
 @media (max-width: 78.75rem) {
-  .container {
-    width: 90%;
-  }
-
   /* menu mobile */
 
   .btn_mobile {

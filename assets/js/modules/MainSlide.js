@@ -16,7 +16,7 @@ export default function slidePrincipal(name) {
         slidesPerView: 6,
       },
       900: {
-        slidesPerView: 4,
+        slidesPerView: 5,
       },
       700: {
         slidesPerView: 3,
