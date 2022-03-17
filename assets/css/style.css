@@ -30,7 +30,7 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1rem;
   color: #fff;
   font-family: "Montserrat", sans-serif;
 }
@@ -39,7 +39,7 @@ html {
 }
 p {
   font-family: "Merriweather Sans", sans-serif;
-  line-height: 26px;
+  line-height: 1.625rem;
 }
 h1,
 h2,
@@ -57,7 +57,7 @@ a {
   display: block;
 }
 .container {
-  width: 1260px;
+  width: 78.75rem;
   margin: 0 auto;
 }
 .index_ {
@@ -66,35 +66,35 @@ a {
 }
 
 .subtitulo {
-  font-size: 21px;
+  font-size: 1.313rem;
   font-weight: bold;
-  letter-spacing: 2.33px;
+  letter-spacing: 0.146rem;
   text-transform: uppercase;
-  margin-bottom: 15px;
+  margin-bottom: 0.938rem;
   display: block;
-  line-height: 30px;
+  line-height: 1.875rem;
 }
 .titulo {
-  font-size: 36px;
+  font-size: 2.25rem;
   font-weight: bold;
-  line-height: 44px;
-  letter-spacing: 0.3px;
+  line-height: 2.75rem;
+  letter-spacing: 0.019rem;
 }
 .title_large {
   color: var(--success);
   font-weight: 900;
-  font-size: 117px;
+  font-size: 7.313rem;
   text-transform: uppercase;
 }
 
 .area_title {
   background: var(--secundary);
-  padding: 160px 15px;
+  padding: 10rem 0.938rem;
   text-align: center;
 }
 .area_title h2 {
-  font-size: 75px;
-  line-height: 92px;
+  font-size: 4.688rem;
+  line-height: 5.75rem;
 }
 .btn {
   display: flex;
@@ -104,32 +104,32 @@ a {
   background: var(--secundary);
   text-align: center;
   width: 100%;
-  max-width: 210px;
-  letter-spacing: 1.6px;
-  padding: 10px 13px;
-  border-radius: 23px;
-  height: 45px;
+  max-width: 13.125rem;
+  letter-spacing: 0.1rem;
+  padding: 0.625rem 0.813rem;
+  border-radius: 1.438rem;
+  height: 2.813rem;
   color: #fff !important;
   transition: 0.7s all;
 }
 .btn:hover {
-  box-shadow: 0px 3px 4px #00000080;
+  box-shadow: 0px 0.188rem 0.25rem #00000080;
   filter: brightness(120%);
 }
 
 .btn_contact {
   display: flex;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 22px;
-  padding: 10px;
-  margin-top: 35px;
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  padding: 0.625rem;
+  margin-top: 2.188rem;
   font-family: "Montserrat", sans-serif;
   align-items: center;
   transition: 0.7s;
 }
 .btn_contact svg {
-  margin-left: 10px;
+  margin-left: 0.625rem;
   transition: 0.8s;
 }
 .btn_contact:hover svg {
@@ -141,14 +141,14 @@ a {
 }
 
 .btn-plus {
-  font-size: 86px;
+  font-size: 5.375rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 200;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 74px;
-  height: 74px;
+  width: 4.625rem;
+  height: 4.625rem;
   border-radius: 50%;
   border: none;
   outline: none;
@@ -159,23 +159,23 @@ a {
 
 .btn_artista {
   background: var(--primary);
-  gap: 5px;
+  gap: 0.313rem;
   display: flex;
   justify-content: center;
-  padding: 19px 23px;
+  padding: 1.188rem 1.438rem;
   position: relative;
-  max-width: 350px;
-  border-radius: 30px;
+  max-width: 21.875rem;
+  border-radius: 1.875rem;
 }
 .btn_artista svg {
   margin: 0 !important;
-  right: 23px;
+  right: 1.438rem;
 }
 /* header */
 .main_header {
   display: grid;
-  grid-template-rows: 50px 110px;
-  box-shadow: 0px 10px 30px #00000029;
+  grid-template-rows: 3.125rem 6.875rem;
+  box-shadow: 0px 0.625rem 1.875rem #00000029;
 }
 .top_nav {
   background: var(--primary);
@@ -194,8 +194,8 @@ a {
   display: flex;
 }
 .top_nav ul li a {
-  padding: 3px;
-  font-size: 12px;
+  padding: 0.188rem;
+  font-size: 0.75rem;
   transition: 0.6s all;
 }
 .top_nav ul a:hover,
@@ -210,7 +210,7 @@ a.ultimo::after {
 }
 .social_menu {
   display: flex;
-  gap: 25px;
+  gap: 1.563rem;
 }
 .social_menu svg path {
   transition: 0.7s all;
@@ -224,7 +224,7 @@ a.ultimo::after {
 }
 .menu a:not(.btn) {
   color: var(--primary);
-  padding: 3px 22px;
+  padding: 0.188rem 1.375rem;
   transition: 0.7s all;
 }
 
@@ -239,25 +239,25 @@ a.ultimo::after {
 }
 .contador_paginas {
   display: flex;
-  gap: 9px;
+  gap: 0.563rem;
   align-items: center;
 }
 .contador_paginas span {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: bold;
 }
 #atual_slide {
   opacity: 0.5;
 }
 .linha {
-  height: 3px;
-  width: 200px;
+  height: 0.188rem;
+  width: 12.5rem;
   background: #ffff;
 }
 .castig_slide {
-  margin-top: 80px;
-  height: 640px;
-  padding-bottom: 80px !important;
+  margin-top: 5rem;
+  height: 40rem;
+  padding-bottom: 5rem !important;
 }
 .castig_slide .swiper-slide {
   overflow: hidden;
@@ -297,20 +297,20 @@ a.ultimo::after {
 .data_evento {
   position: absolute;
   z-index: 100;
-  bottom: 52px;
+  bottom: 3.25rem;
   text-transform: uppercase;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 25px;
-  line-height: 36px;
-  letter-spacing: 2.78px;
+  font-size: 1.563rem;
+  line-height: 2.25rem;
+  letter-spacing: 0.174rem;
   font-weight: 300;
   text-align: center;
   opacity: 0;
   transition: 0.7s 0.2s;
 }
 .castig_slide .swiper-slide:hover {
-  border-radius: 18px;
+  border-radius: 1.125rem;
 }
 .castig_slide .swiper-slide:hover img {
   transform: scale(1.06);
@@ -320,7 +320,7 @@ a.ultimo::after {
   opacity: 1;
 }
 .data_evento {
-  font-size: 43px;
+  font-size: 2.688rem;
   font-weight: bold;
 }
 
@@ -329,23 +329,23 @@ a.ultimo::after {
 }
 .castig_slide .swiper-pagination-bullet {
   background: #fff;
-  height: 22px;
-  width: 22px;
+  height: 1.375rem;
+  width: 1.375rem;
 }
 
 /* footer */
 footer {
   background: linear-gradient(to bottom, #f7f5ff 40%, #fff 40%);
   position: relative;
-  padding: 104px 0 60px 0;
+  padding: 6.5rem 0 3.75rem 0;
 }
 .bg_footer {
-  width: calc(100% - 135px);
+  width: calc(100% - 8.438rem);
   background: var(--primary);
   height: 100%;
   position: absolute;
   z-index: 0;
-  border-radius: 0 20px 5px 0;
+  border-radius: 0 1.25rem 0.313rem 0;
   top: 0;
   left: 0;
   overflow: hidden;
@@ -354,12 +354,12 @@ footer {
   position: absolute;
 }
 .circulo_linhas {
-  bottom: -160px;
-  left: -160px;
+  bottom: -10rem;
+  left: -10rem;
 }
 .circulo_transparente {
-  left: -180px;
-  top: -100px;
+  left: -11.25rem;
+  top: -6.25rem;
 }
 footer .container {
   display: flex;
@@ -369,38 +369,38 @@ footer .container {
 }
 .content_footer {
   display: grid;
-  grid-template-columns: 1fr 470px;
-  column-gap: 135px;
+  grid-template-columns: 1fr 29.375rem;
+  column-gap: 8.438rem;
   text-align: left;
-  margin-top: 60px;
-  padding-bottom: 89px;
+  margin-top: 3.75rem;
+  padding-bottom: 5.563rem;
 }
 .bg_footer .titulo {
-  margin-bottom: 23px;
+  margin-bottom: 1.438rem;
 }
 .content_footer form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 52px 27px;
+  gap: 3.25rem 1.688rem;
 }
 .content_footer form label {
-  font-size: 18px;
+  font-size: 1.125rem;
   font-family: "Poppins", sans-serif;
-  line-height: 27px;
-  margin-bottom: 5px;
+  line-height: 1.688rem;
+  margin-bottom: 0.313rem;
 }
 .content_footer form input,
 .content_footer form textarea {
   width: 100%;
   display: block;
   border: none;
-  border-bottom: 2px solid var(--secundary);
+  border-bottom: 0.125rem solid var(--secundary);
   background: transparent;
   outline: none;
 }
 .content_footer form textarea {
   resize: none;
-  height: 125px;
+  height: 7.813rem;
 }
 
 .form_item {
@@ -412,54 +412,54 @@ footer .container {
 
 .btn_form {
   border: none;
-  border-radius: 6px;
-  font-size: 12px;
-  letter-spacing: 3.6px;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.225rem;
   font-family: "Poppins", sans-serif;
   cursor: pointer;
 }
 .btn_form:hover {
-  box-shadow: 0px 10px 50px var(--secundary);
+  box-shadow: 0px 0.625rem 3.125rem var(--secundary);
 }
 
 .cards_footer {
   display: grid;
-  gap: 30px;
+  gap: 1.875rem;
 }
 .cards_footer .card {
   background: var(--secundary);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 23px 35px;
-  border-radius: 10px;
+  padding: 1.438rem 2.188rem;
+  border-radius: 0.625rem;
 }
 .cards_footer .card h2 {
   font-family: "Poppins", sans-serif;
-  font-size: 20px;
-  line-height: 30px;
-  margin-bottom: 9px;
+  font-size: 1.25rem;
+  line-height: 1.875rem;
+  margin-bottom: 0.563rem;
 }
 .cards_footer .card span {
   font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  line-height: 25px;
+  font-size: 1rem;
+  line-height: 1.563rem;
 }
 
 .copy {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 62px;
-  border-top: 1px solid rgba(255, 255, 255, 0.385);
+  padding-top: 3.875rem;
+  border-top: 0.063rem solid rgba(255, 255, 255, 0.385);
 }
 .logo_footer svg {
-  width: 203px;
-  height: 148px;
+  width: 12.688rem;
+  height: 9.25rem;
 }
 
 footer .social_menu {
-  margin: 46px 0;
+  margin: 2.875rem 0;
 }
 
 .btn_mobile,
@@ -469,8 +469,8 @@ footer .social_menu {
 
 .whats_fixo {
   position: fixed;
-  right: 85px;
-  bottom: 85px;
+  right: 5.313rem;
+  bottom: 5.313rem;
   z-index: 100;
   transition: 0.7s all;
 }
@@ -479,31 +479,31 @@ footer .social_menu {
 }
 
 /* responsivo */
-@media (max-width: 1500px) {
+@media (max-width: 93.75rem) {
   .whats_fixo svg {
-    width: 80px;
-    height: 80px;
-    right: 80px;
-    bottom: 80px;
+    width: 5rem;
+    height: 5rem;
+    right: 5rem;
+    bottom: 5rem;
   }
   .whats_fixo {
-    right: 80px;
-    bottom: 40px;
+    right: 5rem;
+    bottom: 2.5rem;
   }
   .area_title {
-    padding: 80px 0;
+    padding: 5rem 0;
   }
   .title_large {
-    font-size: 80px !important;
-    line-height: 80px;
+    font-size: 5rem !important;
+    line-height: 5rem;
   }
   .area_title h2 {
-    font-size: 45px;
-    line-height: 50px;
+    font-size: 2.813rem;
+    line-height: 3.125rem;
   }
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 78.75rem) {
   .container {
     width: 90%;
   }
@@ -512,8 +512,8 @@ footer .social_menu {
 
   .btn_mobile {
     display: block;
-    width: 34px;
-    height: 28px;
+    width: 2.125rem;
+    height: 1.75rem;
     cursor: pointer;
     background: none;
     border: none;
@@ -522,7 +522,7 @@ footer .social_menu {
   }
   .hamburgger {
     display: block;
-    border-top: 3px solid #2315fe;
+    border-top: 0.188rem solid #2315fe;
     width: 100%;
     position: relative;
     z-index: 9999999;
@@ -535,10 +535,10 @@ footer .social_menu {
   .hamburgger::before {
     display: block;
     content: "";
-    height: 3px;
+    height: 0.188rem;
     width: 100%;
     background: #2315fe;
-    margin-top: 10px;
+    margin-top: 0.625rem;
     position: relative;
     transition: 0.7s;
   }
@@ -549,11 +549,11 @@ footer .social_menu {
   .btn_mobile.ativo {
     z-index: 9999999;
     position: absolute;
-    top: 25px;
-    right: calc(50% - 56px);
+    top: 1.563rem;
+    right: calc(50% - 3.5rem);
     background: var(--success);
-    width: 48px;
-    height: 48px;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
   }
   .btn_mobile.ativo .hamburgger {
@@ -562,18 +562,18 @@ footer .social_menu {
   }
   .btn_mobile.ativo .hamburgger::after {
     transform: rotate(54deg);
-    width: 35px;
-    height: 2px;
-    top: -12px;
-    left: 8px;
+    width: 2.188rem;
+    height: 0.125rem;
+    top: -0.75rem;
+    left: 0.5rem;
     transition: 0.7s;
   }
   .btn_mobile.ativo .hamburgger::before {
     transform: rotate(-54deg);
-    width: 35px;
-    height: 2px;
+    width: 2.188rem;
+    height: 0.125rem;
     top: 0;
-    left: 7px;
+    left: 0.438rem;
     transition: 0.7s;
   }
   .menu_mobile.ativo {
@@ -595,24 +595,24 @@ footer .social_menu {
   .menu_area {
     background: #fff;
     position: absolute;
-    top: 50px;
-    left: 66px;
+    top: 3.125rem;
+    left: 4.125rem;
     right: 0;
     height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 30px;
-    border-radius: 30px;
+    padding: 3.125rem 1.875rem;
+    border-radius: 1.875rem;
     overflow-y: auto;
   }
   .menu_area > img {
-    margin-bottom: 45px;
+    margin-bottom: 2.813rem;
   }
   .menu_area li a:not(.btn) {
     color: var(--primary);
-    font-family: 18px !important;
-    padding: 15px;
+    font-family: 1.125rem !important;
+    padding: 0.938rem;
     display: block;
     transition: 0.7s;
     display: flex;
@@ -630,31 +630,31 @@ footer .social_menu {
   }
   .menu_area li a:hover:not(.btn)::before {
     content: "";
-    height: 1px;
-    width: 28px;
-    margin-right: 12px;
+    height: 0.063rem;
+    width: 1.75rem;
+    margin-right: 0.75rem;
     background: var(--secundary) !important;
     display: inline-block;
   }
   .menu_area .btn {
     width: 100%;
-    margin-top: 40px;
+    margin-top: 2.5rem;
   }
 
   .menu_social_mobile {
-    gap: 24px;
-    margin-top: 50px;
+    gap: 1.5rem;
+    margin-top: 3.125rem;
   }
   .menu_social_mobile svg {
-    width: 23px !important;
-    height: 23px !important;
+    width: 1.438rem !important;
+    height: 1.438rem !important;
   }
   .todas_empresas {
-    margin-top: 47px;
+    margin-top: 2.938rems;
   }
 }
 
-@media (max-width: 780px) {
+@media (max-width: 48.75rem) {
   .bg_footer {
     width: 100% !important;
   }
@@ -663,32 +663,36 @@ footer .social_menu {
   }
   .content_footer {
     grid-template-columns: 1fr !important;
-    gap: 30px;
+    gap: 1.875rem;
   }
   .whats_fixo {
-    right: 40px;
-    bottom: 40px;
+    right: 2.5rem;
+    bottom: 2.5rem;
   }
   .whats_fixo svg {
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 34.375rem) {
+  p {
+    font-size: 1rem;
+    line-height: 1.5;
+  }
   .social_menu {
-    gap: 8px;
+    gap: 0.5rem;
   }
   .social_menu svg {
-    width: 9px;
-    height: 9px;
+    width: 0.563rem;
+    height: 0.563rem;
   }
   .top_nav ul li a {
-    font-size: 10px;
+    font-size: 0.625rem;
   }
   footer .social_menu svg {
-    width: 13px;
-    height: 13px;
+    width: 0.813rem;
+    height: 0.813rem;
   }
   .contador_paginas {
     display: none;
@@ -697,41 +701,41 @@ footer .social_menu {
     justify-content: center;
   }
   .title_large {
-    font-size: 72px !important;
+    font-size: 4.5rem !important;
     text-align: center;
-    margin-bottom: 72px !important;
+    margin-bottom: 4.5rem !important;
   }
   .castig_slide {
-    margin-top: 40px;
+    margin-top: 2.5rem;
   }
 
   footer .titulo {
-    font-size: 30px;
-    line-height: 37px;
-    margin-bottom: 21px;
+    font-size: 1.875rem;
+    line-height: 2.313rem;
+    margin-bottom: 1.313rem;
   }
   .castig_slide {
-    height: 550px !important;
+    height: 34.375rem !important;
   }
   .area_title .title_large {
     margin-bottom: 0 !important;
-    font-size: 48px !important;
-    line-height: 48px;
+    font-size: 3rem !important;
+    line-height: 3rem;
   }
   .area_title h2 {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 1.75rem;
+    line-height: 2rem;
   }
   .titulo {
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 26.625rem) {
   .top_nav .container {
     flex-direction: column;
   }
   .title_large {
-    font-size: 48px;
+    font-size: 3rem;
   }
 }

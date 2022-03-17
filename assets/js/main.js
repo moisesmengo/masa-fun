@@ -6,4 +6,6 @@ slidePrincipal(".categoria1");
 slidePrincipal(".categoria2");
 slidePrincipal(".categoria3");
 slidePrincipal(".categoria4");
+slidePrincipal(".categoria5");
+slidePrincipal(".categoria6");
 slidePrincipal(".home_slide");
