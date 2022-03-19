@@ -47,7 +47,7 @@
   align-items: center;
   padding: 2.563rem;
   border-radius: 50%;
-  border: var(--primary) dotted 1.25rem;
+  background: url(/assets/img/bg_circulo.svg);
 }
 .artista_img img {
   box-shadow: var(--success) 0 0 0 1.5rem;
@@ -118,8 +118,8 @@
   .artista_img {
     max-width: 21.875rem;
     height: 21.875rem;
-    border: var(--primary) dotted 0.625rem;
-    padding: 1.875rem;
+    background-size: contain;
+    padding: 2.4rem;
   }
   .artista_img img {
     box-shadow: var(--success) 0 0 0 1.125rem;

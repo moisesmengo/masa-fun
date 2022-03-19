@@ -9,3 +9,7 @@ slidePrincipal(".categoria4");
 slidePrincipal(".categoria5");
 slidePrincipal(".categoria6");
 slidePrincipal(".home_slide");
+
+import commentsSlide from "./modules/CommentsSlide.js";
+commentsSlide();
+AOS.init();

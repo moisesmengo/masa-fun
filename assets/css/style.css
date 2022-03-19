@@ -1,6 +1,7 @@
 @import url(home.css);
 @import url(casting.css);
 @import url(artista.css);
+@import url(evento.css);
 /* estilos gerais */
 
 :root {
@@ -36,6 +37,9 @@
 }
 html {
   scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
 }
 p {
   font-family: "Merriweather Sans", sans-serif;
@@ -778,6 +782,9 @@ footer .social_menu {
   .titulo {
     font-size: 1.875rem;
     line-height: 2.25rem;
+  }
+  .eventos_slide {
+    height: 23rem !important;
   }
 }
 @media (max-width: 26.625rem) {
