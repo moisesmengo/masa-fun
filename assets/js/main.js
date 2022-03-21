@@ -12,4 +12,7 @@ slidePrincipal(".home_slide");
 
 import commentsSlide from "./modules/CommentsSlide.js";
 commentsSlide();
-AOS.init();
+
+import animeScroll from "./modules/AnimeScroll.js";
+animeScroll();
+
