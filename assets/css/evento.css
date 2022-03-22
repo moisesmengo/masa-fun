@@ -44,6 +44,9 @@
 .eventos_slide {
   height: 32rem !important;
 }
+.evento_realizado {
+  display: block;
+}
 .eventos_slide .evento_realizado::after {
   display: none !important;
 }

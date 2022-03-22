@@ -242,23 +242,7 @@ a.ultimo::after {
 .header_casting .titulo {
   text-transform: uppercase;
 }
-.contador_paginas {
-  display: flex;
-  gap: 0.563rem;
-  align-items: center;
-}
-.contador_paginas span {
-  font-size: 1.125rem;
-  font-weight: bold;
-}
-#atual_slide {
-  opacity: 0.5;
-}
-.linha {
-  height: 0.188rem;
-  width: 12.5rem;
-  background: #ffff;
-}
+
 .castig_slide {
   margin-top: 5rem;
   height: 40rem;
@@ -734,23 +718,32 @@ footer .social_menu {
     font-size: 1rem;
     line-height: 1.5;
   }
-  .social_menu {
-    gap: 0.5rem;
+  .top_nav .social_menu {
+    display: none;
   }
-  .social_menu svg {
-    width: 0.563rem;
-    height: 0.563rem;
-  }
+
   .top_nav ul li a {
     font-size: 0.625rem;
+    padding: 0;
+    display: block;
+    text-align: center;
+  }
+  .top_nav ul li a::after {
+    display: none;
+  }
+  .top_nav ul {
+    height: 100%;
+    align-items: center;
+    gap: 5px;
+  }
+  li a.btn {
+    font-size: 0.8rem !important;
   }
   footer .social_menu svg {
     width: 0.813rem;
     height: 0.813rem;
   }
-  .contador_paginas {
-    display: none;
-  }
+
   .header_casting {
     justify-content: center;
   }

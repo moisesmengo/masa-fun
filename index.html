@@ -32,11 +32,11 @@
       <nav class="top_nav">
         <div class="container">
           <ul>
-            <li><a href="#">Rádio </a></li>
-            <li><a href="#">Televisão </a></li>
-            <li><a href="#">Portal </a></li>
-            <li><a href="#">Eventos </a></li>
-            <li><a href="#" class="ultimo">E-commerce</a></li>
+            <li><a href="#">Rede Massa | SBT </a></li>
+            <li><a href="#">Massa FM </a></li>
+            <li><a href="#">Massa News </a></li>
+            <li><a href="#"> Massa Fun! </a></li>
+            <li><a href="#" class="ultimo">Loja da Massa</a></li>
           </ul>
 
           <div class="social_menu">
@@ -877,12 +877,6 @@
       <section class="casting index_">
         <div class="header_casting container box">
           <h2 class="titulo">CASTING</h2>
-
-          <div class="contador_paginas">
-            <span id="atual_slide">1</span>
-            <div class="linha"></div>
-            <span id="qtd_slide">8</span>
-          </div>
         </div>
         <div class="swiper castig_slide home_slide box">
           <div class="swiper-wrapper">
@@ -1743,7 +1737,6 @@
                 ></span>
               </div>
             </a>
-
           </div>
 
           <button class="btn-plus btnEventoRealizado">+</button>
@@ -2163,7 +2156,13 @@
     <script>
       function verMais(valor_inicial, conteudo, valor_exibir, botao) {
         //Setamos o valor inicial
-        var count = valor_inicial;
+        var count;
+
+        if (window.innerWidth < "755") {
+          count = 6;
+        } else {
+          count = valor_inicial;
+        }
 
         //escondemos todos os elementos maior que o valor inicial
         $(conteudo).slice(count).hide();
