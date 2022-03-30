@@ -400,9 +400,11 @@ a.evento_realizado.box.show {
 .apoios {
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 2.375rem;
-  padding-bottom: 5rem;
+}
+.apoios img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
 }
 
 /* responsivo */
@@ -480,14 +482,6 @@ a.evento_realizado.box.show {
     margin-left: 0;
     margin-top: 1.375rem;
   }
-  .apoios {
-    gap: 0.875rem;
-  }
-  .apoios img {
-    width: 3.75rem;
-    height: 3.75rem;
-    object-fit: contain;
-  }
 }
 @media (max-width: 34.375rem) {
   .circulo,
@@ -515,10 +509,7 @@ a.evento_realizado.box.show {
   .eventos_adereco {
     display: none;
   }
-  .apoios img {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
+
   .content_footer {
     gap: 3.75rem !important;
   }
@@ -528,5 +519,8 @@ a.evento_realizado.box.show {
   .comentarios .titulo,
   .comentarios .subtitulo {
     text-align: center;
+  }
+  .comentarios {
+    padding-bottom: 0;
   }
 }

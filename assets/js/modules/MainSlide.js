@@ -22,10 +22,10 @@ export default function slidePrincipal(name) {
         slidesPerView: 3,
       },
       400: {
-        slidesPerView: 1.5,
+        slidesPerView: 2,
       },
       200: {
-        slidesPerView: 1,
+        slidesPerView: 1.5,
       },
     },
   });

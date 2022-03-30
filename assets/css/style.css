@@ -739,11 +739,10 @@ footer .social_menu {
   li a.btn {
     font-size: 0.8rem !important;
   }
-  footer .social_menu svg {
-    width: 0.813rem;
-    height: 0.813rem;
+  footer .social_menu {
+    position: relative;
+    z-index: 100;
   }
-
   .header_casting {
     justify-content: center;
   }
